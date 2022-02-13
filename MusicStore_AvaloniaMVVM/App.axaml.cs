@@ -1,10 +1,10 @@
 using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
-using MusticStore_AvaloniaMVVM.ViewModels;
-using MusticStore_AvaloniaMVVM.Views;
+using MusicStore_AvaloniaMVVM.ViewModels;
+using MusicStore_AvaloniaMVVM.Views;
 
-namespace MusticStore_AvaloniaMVVM
+namespace MusicStore_AvaloniaMVVM
 {
     public partial class App : Application
     {

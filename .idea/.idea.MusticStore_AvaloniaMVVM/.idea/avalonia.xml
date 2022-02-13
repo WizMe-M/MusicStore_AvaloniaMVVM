@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="MusticStore_AvaloniaMVVM/App.axaml" value="MusticStore_AvaloniaMVVM/MusticStore_AvaloniaMVVM.csproj" />
+        <entry key="MusticStore_AvaloniaMVVM/Views/MainWindow.axaml" value="MusticStore_AvaloniaMVVM/MusticStore_AvaloniaMVVM.csproj" />
+      </map>
+    </option>
+  </component>
+</project>

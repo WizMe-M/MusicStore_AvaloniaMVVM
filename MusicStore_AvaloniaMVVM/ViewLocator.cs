@@ -1,9 +1,9 @@
 using System;
 using Avalonia.Controls;
 using Avalonia.Controls.Templates;
-using MusticStore_AvaloniaMVVM.ViewModels;
+using MusicStore_AvaloniaMVVM.ViewModels;
 
-namespace MusticStore_AvaloniaMVVM
+namespace MusicStore_AvaloniaMVVM
 {
     public class ViewLocator : IDataTemplate
     {

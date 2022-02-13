@@ -2,7 +2,7 @@ using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 
-namespace MusticStore_AvaloniaMVVM.Views
+namespace MusicStore_AvaloniaMVVM.Views
 {
     public partial class MainWindow : Window
     {

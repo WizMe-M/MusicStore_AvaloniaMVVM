@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusticStore_AvaloniaMVVM", "MusticStore_AvaloniaMVVM\MusticStore_AvaloniaMVVM.csproj", "{F261FA7F-BCF6-4A0F-A28C-7AC4E5C3EB68}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicStore_AvaloniaMVVM", "MusicStore_AvaloniaMVVM\MusicStore_AvaloniaMVVM.csproj", "{F261FA7F-BCF6-4A0F-A28C-7AC4E5C3EB68}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
