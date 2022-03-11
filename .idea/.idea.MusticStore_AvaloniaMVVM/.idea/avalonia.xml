@@ -5,7 +5,9 @@
       <map>
         <entry key="MusicStore_AvaloniaMVVM/App.axaml" value="MusicStore_AvaloniaMVVM/MusicStore_AvaloniaMVVM.csproj" />
         <entry key="MusicStore_AvaloniaMVVM/Styles/Icons.axaml" value="MusicStore_AvaloniaMVVM/MusicStore_AvaloniaMVVM.csproj" />
+        <entry key="MusicStore_AvaloniaMVVM/Views/AlbumView.axaml" value="MusicStore_AvaloniaMVVM/MusicStore_AvaloniaMVVM.csproj" />
         <entry key="MusicStore_AvaloniaMVVM/Views/MainWindow.axaml" value="MusicStore_AvaloniaMVVM/MusicStore_AvaloniaMVVM.csproj" />
+        <entry key="MusicStore_AvaloniaMVVM/Views/MusicStoreView.axaml" value="MusicStore_AvaloniaMVVM/MusicStore_AvaloniaMVVM.csproj" />
         <entry key="MusicStore_AvaloniaMVVM/Views/MusicStoreWindow.axaml" value="MusicStore_AvaloniaMVVM/MusicStore_AvaloniaMVVM.csproj" />
         <entry key="MusticStore_AvaloniaMVVM/App.axaml" value="MusticStore_AvaloniaMVVM/MusticStore_AvaloniaMVVM.csproj" />
         <entry key="MusticStore_AvaloniaMVVM/Views/MainWindow.axaml" value="MusticStore_AvaloniaMVVM/MusticStore_AvaloniaMVVM.csproj" />

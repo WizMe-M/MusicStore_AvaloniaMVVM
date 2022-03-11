@@ -1,6 +1,7 @@
 <Window xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:vm="using:MusicStore_AvaloniaMVVM.ViewModels"
+        xmlns:v="using:MusicStore_AvaloniaMVVM.Views"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
@@ -29,10 +30,27 @@
 
         <Panel Margin="40">
             <Button Command="{Binding BuyMusic}"
-                    HorizontalAlignment="Right"
-                    VerticalAlignment="Top" >
-                <PathIcon Data="{StaticResource StoreMicrosoftRegular}"/>
+                    HorizontalAlignment="Right" VerticalAlignment="Top">
+                <PathIcon Data="{StaticResource StoreMicrosoftRegular}" />
             </Button>
+
+            <TextBlock IsVisible="{Binding !Albums.Count}"
+                       Text="Its lonely in here. Purchase some music to get your collection started."
+                       HorizontalAlignment="Center" VerticalAlignment="Center" />
+
+            <ItemsControl Items="{Binding Albums}" Margin="0 40 0 0">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel />
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <v:AlbumView Margin="10"/>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
         </Panel>
 
     </Panel>

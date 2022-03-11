@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Reactive;
-using System.Text;
+﻿using System.Collections.ObjectModel;
+using System.Reactive.Linq;
 using System.Windows.Input;
-using MusicStore_AvaloniaMVVM.ViewModels;
 using ReactiveUI;
 
 namespace MusicStore_AvaloniaMVVM.ViewModels
@@ -12,12 +9,22 @@ namespace MusicStore_AvaloniaMVVM.ViewModels
     {
         public MainWindowViewModel()
         {
-            BuyMusic = ReactiveCommand.Create(() =>
-            {
-            });
+            ShowDialog = new Interaction<MusicStoreViewModel, AlbumViewModel?>();
             
+            BuyMusic = ReactiveCommand.CreateFromTask(async () =>
+            {
+                var store = new MusicStoreViewModel();
+
+                var result = await ShowDialog.Handle(store);
+
+                if (result is not null) 
+                    Albums.Add(result);
+            });
         }
 
         private ICommand BuyMusic { get; }
+        public Interaction<MusicStoreViewModel, AlbumViewModel?> ShowDialog { get; }
+
+        public ObservableCollection<AlbumViewModel> Albums { get; } = new();
     }
 }
